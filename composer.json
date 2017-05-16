@@ -1,0 +1,38 @@
+{
+    "name": "aurimasniekis/doctrine-json-object-type",
+    "type": "library",
+    "description": "Doctrine Json Object Type",
+    "keywords": ["doctrine-json-object-type", "doctrine", "json"],
+    "homepage": "https://github.com/aurimasniekis/doctrine-json-object-type",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aurimas Niekis",
+            "email": "aurimas@niekis.lt"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "doctrine/dbal": "2.6.x-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "AurimasNiekis\\DoctrineJsonObjectType\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { "AurimasNiekis\\DoctrineJsonObjectType\\Test\\": "tests" }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-ci": "vendor/bin/phpunit -c phpunit.xml.ci"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
